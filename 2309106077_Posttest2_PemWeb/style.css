@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:gainsboro ;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+
+}
+
+header img {
+    width: 20%;
+
+}
+.font-header h2 {
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.font-header h4 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.kolom {
+    background-color: bisque;
+    width: 40%;    
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 10px;
+    
+}
+
+.kolom .item {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    gap: 30%;
+
+}
+
+.header-konten {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30%;
+    
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.harga-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rincian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pembatas {
+    border-top: 1px solid black;
+}
+
+.penerima {
+    background-color: bisque;
+    width: 40%;    
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.Informasi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Informasi-colom {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.informasi-pembatas {
+    border-top: 1px solid black;
+}
+
+.pembatas-pembayaran {
+    border-top: 3px solid black;
+}
+
+.pembayaran {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.metode-pembayaran {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid black;
+}
+
