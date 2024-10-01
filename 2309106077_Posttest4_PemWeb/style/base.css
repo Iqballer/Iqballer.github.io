@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --backgroud-color : white;
+    --card: rgb(146, 144, 144);
+    --sidebar: #0f172a;
+    
+}
+
+.gelap {
+    --background-color : black;
+    --card: black;
+    --sidebar: #64748b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+*html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar1,.bar2,.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 6px;
+    transition: .3s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.nav-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: silver;
+    padding: 1rem;
+}
+
+.nav-list{
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: 2rem;
+    gap: 2rem;
+}
+
+.nav-section .nav-list .close{
+    display: none;
+}
+
+.button {
+    background-color: var(--hijau);
+    color: white;  
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: 600;
+  }
+
+.gambar-tengah {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar {
+    width: 100%;
+    height: auto;
+    filter: brightness(25%);
+    height: 850px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gambar-container {
+    position: absolute;
+    text-align: center;
+}
+
+.gambar-title {
+    color: white;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.button-cek {
+    border: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: white;
+    width: 50px;
+    outline: none;
+  }
+
+.klik {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.632);
+}
+
+.colection {
+    padding: 10rem 7%  1.4rem;
+    margin-bottom: 5rem;
+}
+
+.colection h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: rgb(19, 16, 16);
+}
+
+.contoh-novel {
+    display: flex;
+    flex-direction: row;
+}
+
+.konten h2 {
+    color: rgb(255, 255, 255);
+    padding-top: 1.3rem;
+    font-size: 1.4rem;
+    /* padding-left: 3rem; */
+}
+
+
+.artikel-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--card);
+    width: 100%;
+    justify-content: center;
+    gap: 6rem;
+    padding: 1.5rem;
+    border-radius: 30px;
+}
+
+.kartu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: gainsboro;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-section {
+        padding: 10px 20px;
+    }
+
+    .nav-list {
+        font-size: 16px;
+    }
+
+    .gambar {
+        height: 600px;
+    }
+
+    .gambar-title {
+        font-size: 30px;
+    }
+
+    .contoh-novel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artikel-box {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-list {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .gambar {
+        height: 400px;
+    }
+
+    .gambar-title {
+        font-size: 25px;
+    }
+
+    .artikel-box {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contoh-novel {
+        flex-direction: column;
+    }
+
+    .button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-section{
+        flex-direction: row;
+        z-index: 1000;
+
+    }
+    .nav-section .nav-list .close{
+        display: block;
+        font-size: 2rem;
+        color: black;
+    }
+    .hamburger{
+        display: block;
+        background-color: var(--background-color);
+        margin-right: 2rem;
+    }
+    .nav-list {
+        background-color: var(--sidebar);
+        font-size: 14px;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 30%;
+        height: 100%;
+        background-color: var(--backgroud-color);
+        transition: all 0.7s ease;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .nav-list.active{
+        right: 0px;
+    }
+    .gambar {
+        height: 300px;
+    }
+
+    .gambar-title {
+        font-size: 20px;
+    }
+
+    .button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
